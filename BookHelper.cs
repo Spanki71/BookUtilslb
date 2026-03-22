@@ -49,5 +49,13 @@ namespace BookUtils
         {
             return string.IsNullOrWhiteSpace(genre) ? "Не указан" : genre;
         }
+                /// <summary>
+        /// Метод, который вызовет конфликт
+        /// </summary>
+        public static string ConflictMethod()
+        {
+            return "This is from feature branch";
+        }
     }
 }
+
