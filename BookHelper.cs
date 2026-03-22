@@ -56,5 +56,12 @@ namespace BookUtils
         {
             return !string.IsNullOrWhiteSpace(title) && title.Length <= 200;
         }
+                /// <summary>
+        /// Другой метод, который вызовет конфликт
+        /// </summary>
+        public static string AnotherMethod()
+        {
+            return "This is from master branch";
+        }
     }
 }
