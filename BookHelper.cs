@@ -49,5 +49,12 @@ namespace BookUtils
         {
             return string.IsNullOrWhiteSpace(genre) ? "Не указан" : genre;
         }
+        /// <summary>
+        /// Проверяет, является ли название книги корректным
+        /// </summary>
+        public static bool IsValidTitle(string title)
+        {
+            return !string.IsNullOrWhiteSpace(title) && title.Length <= 200;
+        }
     }
 }
